@@ -1,0 +1,290 @@
+body{
+	background-color: #FFFFFF;
+	margin: 0px;
+	width: 100%;
+	font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-seferif;
+	text-align: justify;
+}
+
+h2{
+	background-color: #BEBBBB;
+	text-align: center;
+	padding: 10px;
+}
+
+/*<!–  PARA EL MENU   –>*/
+
+.menu{
+	width: 100%;
+	background-color: #393E41;
+	overflow: auto;
+	position: fixed;
+}
+.menu li{
+	display: inline-block;
+	list-style: none;
+}
+.menu a{
+	float: left;
+	text-align: center;
+	padding: 0px 10px 0px;
+	color: #BEBBBB;
+	text-decoration: none;
+	font-size: 1rem;
+}
+.menu a:hover{
+	color: #FFFFFF;
+}
+
+ /*  PARA LA CABECERA */
+
+header{
+	background-color: #D3D0CB;
+	color: #FFFFFF;
+	margin: 0px auto;
+	padding: 70px 30px;
+	text-align: center;
+	font-size: 2rem;
+}
+.container{
+	margin-right: 70px;
+	margin-left: 70px;
+}
+
+ /* PARA LAS IMAGENES  */
+
+img{
+	display: block;
+	margin: 0px auto;
+}
+
+/*  PARA LA IMAGEN CON LETRA */
+
+.imagenfoto img{
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ /* PARA EL VIDEO  */
+
+ video{
+ 	display: block;
+ 	margin: 0px auto;
+ }
+
+/*    PARA EL ENLACE DE YOOTOBE  */
+
+iframe{
+	display: block;
+	margin: 0px auto;
+}
+
+  /* PARA LA TABLA  */
+
+table{
+	width: 80%;
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+td,th{
+	border: 1px solid #BEBBBB;
+	text-align: left;
+	padding: 8px;
+}
+td{
+	width: 25%;
+}
+tr:nth-child(even) {
+	background-color:#BEBBBB; 
+}
+
+/*  PARA IMAGENES DE VIDEOS  */
+
+.peliculas table{
+	font-family: verdana, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+}
+.peliculas th{
+	border: 1px solid #393E41;
+	padding: 15px;
+	background-color: #393E41;
+	text-align: center;
+}
+.peliculas td{
+	border: 1px solid #BEBBBB;
+	padding: 18px;
+	background-color: #BEBBBB;
+}
+
+/* PARA EL FORMULARIOS REGISTRECE */
+
+form {
+	width: 450px;
+	margin: auto;
+	background: #838383;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;
+
+}
+form h2 {
+	color: black;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+
+}
+form input, textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+}
+textarea {
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+}
+#boton {
+	background: #167ce1;
+	color: #fff
+	padding:20px;
+}
+#boton:hover {
+	cursor: pointer;
+}
+@media screen and (max-width: 480px){
+	body{
+		font-size: 20px;
+
+	}
+}
+
+ /* PARA EL PIE DE PAGINA  */
+
+footer{
+	background-color: #393E41;
+	margin: 0px auto;
+	padding: 10px 0px;
+	color: #FFFFFF;
+	font-size: small;
+	text-align: center;
+	width: 100%;
+}
+
+/*  PARA LAS FILAS Y COLUMAS DE LA IMAGEN FOTO  */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row {
+	display: inline-flex;
+	width: 100%;
+}
+.row h3 {
+	text-align: center;
+}
+.row img{
+	text-align: center;
+}
+
+/*   RESPONCIVO  */
+
+@media only screen and (max-width: 600px) {
+	img{
+		max-width: 100%;
+	}
+	video {
+		max-width: 100%;
+	}
+	.container {
+		margin: 0px 8px 0px 20px;
+	}
+	table {
+		max-width: 100%;
+		font-size: 8px;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	.menu a {
+		padding: 0.8px;
+		font-size: 0.7rem;
+		
+	}
+	.mmenu{
+		width: 90%
+	}
+	header {
+		padding: 90px 15px 20px 15px;
+		font-size: 0.5rem;
+		text-align: center;
+		width: 100%;
+	}
+	.row {
+		display: block;
+	}
+
+	.col-3 {width: 100%;}
+	.col-9 {width: 100%;}
+	.col-4 {width: 100%;}
+	form {
+		width: 100%;
+		font-size: 10px;
+	}
+}
+/****@media screen and (max-width: 820px) {
+	.row .col-3 img{
+		width: 150px;
+		height: 195px;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* 
+<form>
+			<label>Nombre:</label>
+			<input type="text" name="Nombre" id="Nombre" for="Nombre" placeholder="Ingrese su nombre"><br>
+			<label>Apellido:</label>
+			<input type="text" name="Apellido" id="Apelldio" for="Apellido" placeholder="Ingrese su apellido"><br>
+			<label>Edad</label>
+			<input type="number" name="edad" id="edad" placeholder="Igrese su edad">
+			<label>Email:</label>
+			<input type="email" name="email" id="email" for="email" placeholder="Ingrese su email"><br>
+			<label>Passwod:</label>
+			<input type="password" name="password" id="password" for="password" placeholder="Ingrese su contraseña"><br>
+			<label>¿En donde vives?</label>
+			<input type="radio" name="ciuda" id="La Paz">
+			<input type="radio" name="ciuda" id="El alto">
+			<input type="radio" name="ciuda" id="Viacha">
+			<button type="submit">Emviar</button>
+			<button type="reset">Limpiar</button>
+			
+		</form>
+*/
